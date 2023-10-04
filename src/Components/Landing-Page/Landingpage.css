@@ -1,0 +1,18 @@
+.landing-page{
+    height: 50%;
+    width: 40%;
+    border: 3px solid red;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.landing-page a{
+    color: white;
+}
+
+.boxes{
+    border-bottom: 2px dashed white;
+}

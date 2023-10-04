@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import { useDispatch } from 'react-redux';
+import { data } from './Functions/essentials';
+import Landingpage from './Components/Landing-Page/Landingpage';
+import {Route,Routes} from "react-router-dom"
+import Criteria from './Components/Criteria/Criteria';
+import Moredetails from './Components/Moredetails/Moredetails';
 
 function App() {
+  const dispatch = useDispatch()
+  
+  useEffect(() => {
+    dispatch({
+      type:"information",
+      payload:data
+    })
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+        <Route path='/' element={<Landingpage/>} />
+        <Route path='/criteria/:id' element={<Criteria/>} />
+        <Route path='/moredetails/:id/:idx' element={<Moredetails/>} />
+        <Route path='/moredetails/:id' element={<Moredetails/>} />
+      </Routes>
     </div>
   );
 }
