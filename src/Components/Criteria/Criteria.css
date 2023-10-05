@@ -1,11 +1,11 @@
 .criteria{
     height: 50%;
     width: 40%;
-    border: 3px solid red;
     padding: 10px 15px;
     background-color: black;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .heading{
@@ -26,4 +26,12 @@
 
 .span{
     cursor: pointer;
+}
+
+.and{
+    font-size: 0.7rem;
+}
+
+.lastP{
+    margin-top: 15px;
 }

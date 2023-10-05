@@ -81,23 +81,23 @@ const Criteria = () => {
 
           {/* <Link to={`/moredetails/${id}`}><span>{(id == 4) && item.text.replace("$1","(20)").replace("$2","(100)")}</span></Link> */}
           </p>
-          {idx < data.criteria.length -1 ? <span style={{color:"white"}}>and</span> : null}
+          {idx < data.criteria.length -1 ? <span className='and' style={{color:"white"}}>and</span> : null}
           </>
       })}
       
       {id == 3 && data && data.criteria.map((ele,idx) => {
-        return <><p style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span style={{color:"white"}}>and</span> : null}</>
+        return <><p style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span className='and' style={{color:"white"}}>and</span> : null}</>
       })}
       
 
       {id == 4 && data && data.criteria.map((ele,idx) => {
-        return <><p style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span style={{color:"white"}}>and</span> : null}</>
+        return <><p style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span className='and' style={{color:"white"}}>and</span> : null}</>
       })}
 
 
 {/* Last One */}
      {id == 5 && data && data.criteria.map((ele,idx) => {
-        return <><p style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span style={{color:"white"}}>and</span> : null}</>
+        return <><p className='lastP' style={{color:"white"}}>{changeData(ele.text,id)}</p> {idx < data.criteria.length -1 ? <span className='and' style={{color:"white"}}>and</span> : null}</>
       })}
      
 

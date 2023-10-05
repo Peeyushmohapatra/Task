@@ -1,12 +1,12 @@
 .landing-page{
-    height: 50%;
+    height: 70%;
     width: 40%;
-    border: 3px solid red;
     background-color: black;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 10px 15px;
+    border-radius: 20px;
 }
 
 .landing-page a{
@@ -15,4 +15,5 @@
 
 .boxes{
     border-bottom: 2px dashed white;
+    padding: 10px;
 }

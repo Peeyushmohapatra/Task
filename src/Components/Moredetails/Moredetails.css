@@ -1,7 +1,6 @@
 .more_details{
     height: 50%;
     width: 40%;
-    border: 3px solid red;
     background-color: black;
     position: relative;
 }
@@ -49,7 +48,8 @@
 
 .number{
     color: white;
-    border-bottom: 1px dashed white;
+    border-bottom: 0.9px dashed white;
+    padding: 10px;
 }
 
 .upper_dollar4{
