@@ -57,7 +57,7 @@ const Moredetails = () => {
         })}
       </div>
 
-      {id == 4 && (
+      {id == 4 && idx == 0 && (
         <div className="div4">
             <div>
             <p>CCI</p>
@@ -78,8 +78,15 @@ const Moredetails = () => {
               type="number"
             />
             </div>
-    
-          <div>
+        </div>
+      )}
+      {id == 4 && idx == 1 && (
+        <div className="div4">
+            <div>
+            <p>CCI</p>
+            <p>Set Parameters</p>
+            </div>
+            <div>
             {idFour.$2 &&
               idFour.$2.map((ele) => {
                 return <p className="number">{ele}</p>;
@@ -106,6 +113,10 @@ const Moredetails = () => {
                     return <p className="number">{item}</p>;
                   })}
               </div>
+            </div>
+          )}
+          {idx == 2 && (
+            <div className="upper_div">
               <div className="number_container">
                 {idFive["$3"] &&
                   idFive["$3"].map((item) => {
@@ -115,7 +126,7 @@ const Moredetails = () => {
             </div>
           )}
 
-          {idx == 2 && (
+          {idx == 3 && (
             <div className="dollar4">
               <div className="upper_dollar4">
                 <p>RSI</p>
